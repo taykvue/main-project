@@ -1,0 +1,338 @@
+body{
+    background-color: #2B1A12;
+}
+
+.hd {
+	font-family: 'hd';
+}
+
+@font-face {
+    font-family: 'hd';
+    src:url(fonts/Tangerine-Bold.ttf) format('truetype');
+}
+
+.ripple-effect {
+    position: relative;
+	background-color: #1B0A04;
+}
+
+.section {
+	position: relative;
+	/*outline: blue solid 5px; /* ensures sections are divided - delete after use */
+	height: 100vh;
+	width: 95vw;
+}
+
+.transition {
+	position: relative;
+	height: 50vh;
+	width: 95vw;
+}
+
+.container { /* makes sure that nothing goes beyond the boundaries of the slideshow */
+	position: absolute;
+    left: 20%;
+	width: 80vw;
+	height: 100vh;
+	overflow: hidden;
+	/*outline: blue solid 5px; /* ensures sections are divided - delete after use */
+}
+
+/* refix dots to coffee comparison chart */
+.slick-dots { /* adjusts the position of the slideshow dots */
+	position: absolute;
+	left: 40%;
+	bottom: 5%;
+}
+
+.slideshow { /* dimensions for the entire slideshow */
+	position: absolute;
+	width: 80vw;
+	height: 100vh;
+}
+
+.slide { /* dimensions for each slide */
+	width: 80vw;
+	height: 100vh;
+}
+
+.boundary { /* specifications for each slide */
+	width: 100%;
+	height: 100%;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%,0px);
+}
+
+.drink { /* CSS for text */
+	font-size: 350px;
+	line-height: 23px;
+	color: #E8B171;
+	opacity: 75%;
+	position: absolute;
+	right: 5%;
+	text-align: right;
+	top: 200px;
+	animation: colormovement 20s infinite ease-in;
+}
+
+.title-bar {
+	/*outline: red dashed 5px;  /*outline- delete after use */
+	position: absolute;
+	right: 95%;
+	height: 100vh;
+}
+
+.number {
+	position: absolute;
+	font-size: 480px;
+	text-align: center;
+	color: #2B1A12;
+	background-color: #B18655;
+	width: 275px;
+	top: -15%;
+	left: 25%;
+	animation: movement 3s ease-out;
+}
+
+@keyframes movement {
+	0%	{top: 0%;}
+	100% {top: -15%;}
+}
+@keyframes colormovement {
+	0%	{color: #4F2D17;}
+	25% {color: #B98C5A;}
+	50% {color: #D6AC7C;}
+	75% {color: #B98C5A;}
+	100% {color: #4F2D17;}
+}
+.title-one{
+	position: absolute;
+	color: #6D4F34;
+	opacity: 100%;
+	font-size: 80px;
+	bottom: 5%;
+	text-align: right;
+	animation: slidedown 4s ease-out;
+}
+
+@keyframes slidedown {
+	0%	{bottom: 100%;}
+	100% {bottom: 5%;}
+}
+@keyframes appear {
+	0% {opacity: 0%;}
+	100% {opacity: 75%;}
+}
+
+.image { /* CSS imgs */
+	width: 780px;
+	height: 812px;
+	position: absolute;
+	left: 300px;
+	top: 150px;
+	transform:translate(-50%,0%);
+}
+
+.notes {
+	position: absolute;
+}
+
+.paper1 {
+	width: 730px;
+	height: 535px;
+	left: 48%;
+	top: 318.78px;
+	transform: rotate(2.8deg);
+}
+.notes1 {
+	font-size: 35px;
+	width: 550px;
+	color: #2B1A12;
+	transform: translate(830px, 470px) rotate(1.75deg);
+}
+.paper2 {
+	width: 980px;
+	height: 492px;
+	left: 38%;
+	top: 370px;
+	transform: rotate(2.2deg);
+}
+.notes2 {
+	font-size: 35px;
+	width: 550px;
+	color: #2B1A12;
+	transform: translate(860px, 470px) rotate(1.75deg);
+}
+
+.paper3 {
+	width: 800px;
+	height: 550px;
+	left: 48%;
+	top: 305px;
+	transform: rotate(1.25deg);
+}
+.notes3 {
+	font-size: 35px;
+	width: 550px;
+	color: #2B1A12;
+	transform: translate(860px, 470px) rotate(1.25deg);
+}
+
+.paper4 {
+	width: 990px;
+	height: 900px;
+	left: 38%;
+	top: 100px;
+	transform: rotate(1.25deg);
+}
+.notes4 {
+	font-size: 35px;
+	width: 550px;
+	color: #2B1A12;
+	transform: translate(860px, 470px) rotate(1.75deg);
+}
+
+.paper5 {
+	width: 750px;
+	height: 750px;
+	left: 48%;
+	top: 230px;
+	transform: rotate(1.25deg);
+}
+.notes5 {
+	font-size: 35px;
+	width: 550px;
+	color: #2B1A12;
+	transform: translate(860px, 470px) rotate(1.75deg);
+}
+
+
+.zoomple {
+	position: absolute;
+	width: 400px;
+	height: 400px; 
+	/* outline: beige solid 2px; */
+	animation: trayfloat 110s infinite ease-out;
+}
+
+.facts {
+	font-size: 8px;
+	position: absolute;
+	width: 60px;
+	left: 65%;
+	top:20%;
+	color: #2B1A12;
+	transform: rotate(1.6deg);
+}
+
+@keyframes trayfloat {
+	0% {left:-10%; top: 20%; transform: rotate(-45deg)}
+	20% {left: 40%; top: 40%; transform: rotate(10deg)}
+	80% {left: 60%; top: 45%; transform: rotate(0deg)}
+	100% {left:120%; top: 50%; transform: rotate(40deg)}
+}
+
+.flower1{
+	position:absolute;
+	width: 100px;
+	height: 100px;
+	animation: flowerfloat1 70s infinite ease-out;
+}
+
+@keyframes flowerfloat1 {
+	0% {left:-20%; top: 10%; transform: rotate(-45deg)}
+	100% {left:100%; top: 30%; transform: rotate(180deg)}
+}
+.flower2{
+	position:absolute;
+	width: 100px;
+	height: 100px;
+	animation: flowerfloat2 20s infinite ease-out;
+}
+
+@keyframes flowerfloat2 {
+	0% {left:-10%; top: 60%; transform: rotate(-75deg)}
+	100% {left:100%; top: 90%; transform: rotate(1deg)}
+}
+.flower3{
+	position:absolute;
+	width: 100px;
+	height: 100px;
+	animation: flowerfloat3 21s infinite ease-out;
+}
+
+@keyframes flowerfloat3 {
+	0% {left:-12%; top: 10%; transform: rotate(-75deg)}
+	100% {left:104%; top: 50%; transform: rotate(1deg)}
+}
+.flower4{
+	position:absolute;
+	width: 100px;
+	height: 100px;
+	animation: flowerfloat4 50s infinite ease-out;
+}
+
+@keyframes flowerfloat4 {
+	0% {left:-25%; top: 10%; transform: rotate(-45deg)}
+	100% {left:100%; top: 50%; transform: rotate(180deg)}
+}
+.flower5{
+	position:absolute;
+	width: 100px;
+	height: 100px;
+	animation: flowerfloat5 70s infinite ease-out;
+}
+
+@keyframes flowerfloat5 {
+	0% {left:-20%; top: 10%; transform: rotate(-45deg)}
+	100% {left:120%; top: 30%; transform: rotate(180deg)}
+}
+
+.ocean {
+	position: absolute;
+	width: 100%;
+	height: 368px;
+	left: 0%;
+	top:100px;
+}
+
+.coffeeplant {
+	position: absolute;
+	top: 300px;
+	right: 0%;
+}
+
+.growthfact {
+	color: #F5E3CC;
+	position: absolute;
+	top: 600px;
+	right: 20%;
+	width: 440px;
+	font-size: 40px;
+}
+
+.lastfact{
+	color: #F5E3CC;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	font-size: 40px;
+}
+
+.lastfactlarge{
+	color: #F5E3CC;
+	position: absolute;
+	top: 20%;
+	width: 80vw;
+	left: 10%;
+	font-size: 400px;
+}
+
+.copyright {
+	color:#F5E3CC;
+	position: absolute;
+	right: 10%;
+	bottom: 10%;
+	font-size: 100px;
+}
