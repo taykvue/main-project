@@ -67,13 +67,23 @@ body{
 .drink { /* CSS for text */
 	font-size: 350px;
 	line-height: 23px;
-	color: #E8B171;
+	color: #F5E3CC;
 	opacity: 75%;
 	position: absolute;
 	right: 5%;
 	text-align: right;
 	top: 200px;
 	animation: colormovement 20s infinite ease-in;
+}
+.drink2 { /* CSS for text */
+	font-size: 350px;
+	line-height: 23px;
+	color: #6D4F34;
+	opacity: 75%;
+	position: absolute;
+	right: 5.5%;
+	text-align: right;
+	top: 205px;
 }
 
 .title-bar {
@@ -100,11 +110,11 @@ body{
 	100% {top: -15%;}
 }
 @keyframes colormovement {
-	0%	{color: #4F2D17;}
+	0%	{color: #EEBD80;}
 	25% {color: #B98C5A;}
 	50% {color: #D6AC7C;}
 	75% {color: #B98C5A;}
-	100% {color: #4F2D17;}
+	100% {color: #EEBD80;}
 }
 .title-one{
 	position: absolute;
